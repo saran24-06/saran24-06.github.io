@@ -88,6 +88,13 @@
   }
 }
 
+/* phones: portrait banner photo (assets/img/hero-mobile.jpg) */
+@media (max-width: 767px) {
+  .hero img.hero-photo {
+    object-position: 50% 50%;
+  }
+}
+
 /* ---------- About ---------- */
 .about .about-photo {
   border-radius: 8px;
