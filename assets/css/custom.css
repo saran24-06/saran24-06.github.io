@@ -1,0 +1,854 @@
+/* ==========================================================
+   Robotics additions on top of iPortfolio
+   - live robot arm hero (canvas)
+   - grouped skill chips
+   - project cards with text visible (no hover-only overlay)
+   - embedded CV viewer
+   ========================================================== */
+
+/* ---------- Hero with background photo ---------- */
+.hero {
+  background: #040b14;
+  overflow: hidden;
+}
+
+.hero img.hero-photo {
+  /* keep you in frame: horizontal % then vertical % (lower % = higher in the photo) */
+  object-position: 30% 50%;
+}
+
+.hero:before {
+  /* dark on the left so the name stays readable, clear on the right where you stand */
+  background: linear-gradient(90deg, rgba(4, 11, 20, 0.85) 0%, rgba(4, 11, 20, 0.55) 40%, rgba(4, 11, 20, 0) 75%);
+  pointer-events: none;
+}
+
+.hero .hero-eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin: 0 0 14px 0;
+}
+
+.hero .hero-eyebrow + h2 {
+  line-height: 1.05;
+}
+
+.hero .hero-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.btn-hero {
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 2px solid var(--accent-color);
+  color: var(--default-color);
+  background: rgba(4, 11, 20, 0.35);
+  transition: 0.3s;
+}
+
+.btn-hero.primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-hero:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    align-items: flex-start;
+    padding-top: 110px;
+  }
+
+  .hero h2 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero img.hero-photo {
+    object-position: 66% 50%;
+  }
+
+  .hero:before {
+    background: linear-gradient(180deg, rgba(4, 11, 20, 0.85) 0%, rgba(4, 11, 20, 0.45) 45%, rgba(4, 11, 20, 0) 70%);
+  }
+}
+
+/* ---------- About ---------- */
+.about .about-photo {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* ---------- Skills ---------- */
+.skill-group {
+  background: var(--surface-color);
+  border-radius: 8px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 2px 16px rgba(5, 13, 24, 0.06);
+}
+
+.skill-group > i {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.skill-group h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 14px 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips span {
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--heading-color);
+}
+
+/* ---------- Project cards ---------- */
+.project-card {
+  background: var(--surface-color);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 16px rgba(5, 13, 24, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(5, 13, 24, 0.12);
+}
+
+.project-card .project-img img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card .project-body {
+  padding: 22px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.project-card .project-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.project-card .in-progress {
+  color: var(--accent-color);
+}
+
+.project-card h3 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.project-card ul {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.project-card ul li {
+  padding-bottom: 4px;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.project-card .chips {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* ---------- About tags + View CV ---------- */
+.about .about-actions {
+  margin-top: 4px;
+}
+
+/* ---------- CV pop-up ---------- */
+.cv-modal .modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cv-modal .modal-body {
+  padding: 0;
+  background: #525659;
+}
+
+.cv-modal .modal-body {
+  padding: 16px;
+}
+
+.cv-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cv-pages img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cv-modal .modal-footer {
+  padding: 16px;
+}
+
+button.btn-cv {
+  cursor: pointer;
+}
+
+/* ---------- Buttons ---------- */
+.btn-cv {
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.btn-cv.primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-cv:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+}
+
+/* ---------- Contact links ---------- */
+.contact .info-item a {
+  color: inherit;
+}
+
+.contact .info-item a:hover {
+  color: var(--accent-color);
+}
+
+/* Social icon spacing for the sidebar */
+.header .social-links a {
+  margin: 0 3px;
+}
+
+/* ---------- Experience: lab topic cards ---------- */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 18px 0 8px;
+}
+
+.topic-card {
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 40px 16px 16px;
+  border-radius: 8px;
+  border: 1.5px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  background: var(--surface-color);
+  color: var(--default-color);
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.topic-card:hover,
+.topic-card:focus-visible {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5, 13, 24, 0.08);
+  outline: none;
+}
+
+.topic-card .topic-no {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.topic-card .topic-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--heading-color);
+  line-height: 1.35;
+}
+
+.topic-card i {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: var(--accent-color);
+}
+
+.topic-modal .topic-modal-no {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 2px;
+}
+
+.topic-modal .modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.topic-modal .modal-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
+
+.topic-modal .modal-body ul {
+  padding-left: 20px;
+}
+
+/* ---------- Skills: languages ---------- */
+.skills .sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 48px 0 20px;
+}
+
+.lang-card {
+  background: var(--surface-color);
+  border-radius: 8px;
+  padding: 22px 24px;
+  height: 100%;
+  box-shadow: 0 2px 16px rgba(5, 13, 24, 0.06);
+}
+
+.lang-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.lang-head h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.lang-level {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.cefr {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+}
+
+.cefr i {
+  height: 8px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.cefr i.on {
+  background: var(--accent-color);
+}
+
+.cefr-scale {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin-top: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  text-align: center;
+}
+
+.lang-card p {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* ---------- Extra-curricular link ---------- */
+.life-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 640px;
+  padding: 22px 26px;
+  border-radius: 8px;
+  background: var(--surface-color);
+  border: 1.5px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  color: var(--default-color);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.life-link:hover {
+  border-color: var(--accent-color);
+  transform: translateX(4px);
+  color: var(--default-color);
+}
+
+.life-link .life-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.life-link strong {
+  font-size: 18px;
+  color: var(--heading-color);
+}
+
+.life-link .life-text span {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.life-link i {
+  font-size: 28px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+
+/* ---------- About: scroll rover on the tags ---------- */
+.tag-scroller {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;           /* tags can scroll sideways on narrow screens */
+  margin-bottom: 14px;
+}
+
+.tag-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.rover-track {
+  position: relative;
+  display: inline-block;
+  min-width: 100%;
+  padding-top: 50px;               /* room for the rover, which drives on top of the tags */
+  padding-right: 24px;             /* room for its arm at the last tag */
+  vertical-align: top;
+}
+
+.rover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 60px;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.rover svg {
+  display: block;
+  overflow: visible;
+}
+
+.rv-body { fill: var(--accent-color); stroke: #050d18; stroke-width: 2.5; }
+.rv-face { fill: #0b1826; }
+.rv-eye { fill: #8fe6ff; }
+.rv-smile { fill: none; stroke: #8fe6ff; stroke-width: 2; stroke-linecap: round; }
+.rv-line { stroke: #050d18; stroke-width: 2.5; stroke-linecap: round; }
+.rv-led { fill: #ff5a3c; stroke: #050d18; stroke-width: 1.5; animation: rv-blink 1.4s steps(2, jump-none) infinite; }
+.rv-link { stroke: #050d18; stroke-width: 4; stroke-linecap: round; }
+.rv-claw { fill: none; stroke: #050d18; stroke-width: 2.5; stroke-linecap: round; }
+.rv-joint { fill: #ffffff; stroke: #050d18; stroke-width: 2; }
+.rv-tyre { fill: #050d18; }
+.rv-spoke { stroke: #9aa7b4; stroke-width: 2; stroke-linecap: round; }
+
+@keyframes rv-blink {
+  0% { fill: #ff5a3c; }
+  100% { fill: #ffd4c9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-led { animation: none; }
+}
+
+.about .about-tags {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: max-content;
+}
+
+.about .about-tags span {
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 4px 14px;
+  border-radius: 50px;
+  border: 1.5px solid var(--accent-color);
+  color: var(--accent-color);
+  background: var(--surface-color);
+  transition: background-color 0.3s, color 0.3s, transform 0.25s, box-shadow 0.25s;
+}
+
+.about .about-tags span.lit {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.about .about-tags span.active {
+  transform: translateY(2px) scale(1.06);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+@media (max-width: 480px) {
+  .about .about-tags { gap: 5px; }
+  .about .about-tags span { font-size: 11.5px; padding: 3px 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  }
+
+/* ---------- Skills: Robot Learning (learning now) ---------- */
+.learning-now .learning-head {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.learning-now .learning-head > i {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.learning-now h4 {
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.learning-now .learning-head p {
+  margin: 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.badge-now {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+}
+
+.learning-now .learning-cols {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.learning-now h5 {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0 0 10px;
+}
+
+@media (max-width: 767px) {
+  .learning-now .learning-cols { grid-template-columns: minmax(0, 1fr); }
+}
+
+
+/* ---------- Education: detail links + pop-ups ---------- */
+.detail-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-top: 2px;
+  font-family: var(--nav-font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-link:hover i {
+  transform: translateX(3px);
+}
+
+.detail-link i {
+  transition: transform 0.2s;
+}
+
+.info-modal .modal-header {
+  padding: 18px 28px;
+}
+
+.info-modal .modal-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.info-modal .modal-body {
+  padding: 8px 28px 28px;
+}
+
+.edu-entry {
+  padding: 22px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  scroll-margin-top: 8px;
+}
+
+.edu-entry:last-child {
+  border-bottom: 0;
+}
+
+.edu-entry.focus h3 {
+  color: var(--accent-color);
+}
+
+.edu-entry h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  transition: color 0.3s;
+}
+
+.info-modal .edu-meta {
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0 0 14px;
+}
+
+.edu-entry ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.edu-entry li {
+  padding: 4px 0;
+}
+
+.cert-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.cert-img img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(5, 13, 24, 0.12);
+}
+
+.cert-topics h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.cert-topics .topic-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+}
+
+.cert-topics h4 {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  margin: 0 0 10px;
+}
+
+.cert-topics p {
+  font-size: 14.5px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 991px) {
+  .cert-layout { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 575px) {
+  .cert-topics .topic-cols { grid-template-columns: minmax(0, 1fr); }
+  .info-modal .modal-title { font-size: 22px; }
+  .edu-entry h3 { font-size: 19px; }
+  .info-modal .modal-header, .info-modal .modal-body { padding-left: 18px; padding-right: 18px; }
+}
+
+/* ---------- Projects: certifications ---------- */
+.certs-block {
+  margin-top: 56px;
+}
+
+.certs-block .sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.cert-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  padding: 20px 44px 20px 20px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  background: var(--surface-color);
+  color: var(--default-color);
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.cert-tile:hover,
+.cert-tile:focus-visible {
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5, 13, 24, 0.08);
+  outline: none;
+}
+
+.cert-tile .cert-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: 1.35;
+}
+
+.cert-tile .cert-issuer {
+  font-size: 14.5px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.cert-tile .cert-date {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  margin-top: 4px;
+}
+
+.cert-tile i {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+.cert-facts {
+  margin: 0 0 14px;
+}
+
+.cert-facts div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.cert-facts dt {
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.cert-facts dd {
+  margin: 0;
+  font-size: 14.5px;
+}
+
+.cert-verify {
+  font-size: 13.5px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}

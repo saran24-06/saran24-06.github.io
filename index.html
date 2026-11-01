@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Saran Karthikeyan Alaguvelraja | Robotics &amp; Simulation</title>
+  <meta content="Portfolio of Saran Karthikeyan Alaguvelraja, M.Sc. student in Computational Sciences in Engineering at TU Braunschweig, working on robotics, simulation and sim-to-real transfer." name="description">
+  <meta content="Saran Karthikeyan Alaguvelraja, robotics, Isaac Sim, ROS 2, sim-to-real, TU Braunschweig, mechanical engineering" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom additions (hero photo, project cards, pop-ups, languages) -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/profile.jpg" alt="Saran Karthikeyan Alaguvelraja" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Saran K. A.</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/saran-karthikeyan-8b158a219/" class="linkedin" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/saran24-06" class="github" target="_blank" rel="noopener" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="mailto:sarandeutsch@gmail.com" class="email" title="Email"><i class="bi bi-envelope"></i></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#cvModal" title="View CV"><i class="bi bi-file-earmark-person"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#education"><i class="bi bi-mortarboard navicon"></i> Education</a></li>
+        <li><a href="#experience"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
+        <li><a href="#portfolio"><i class="bi bi-cpu navicon"></i> Projects</a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
+        <li><a href="#extracurricular"><i class="bi bi-stars navicon"></i> Extra-curricular</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section: background photo (assets/img/hero.jpg) -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero.jpg" alt="Saran Karthikeyan Alaguvelraja in front of TU Braunschweig" class="hero-photo" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p class="hero-eyebrow">M.Sc. Computational Sciences in Engineering · TU Braunschweig</p>
+        <h2>Saran Karthikeyan<br>Alaguvelraja</h2>
+        <p>I'm a <span class="typed" data-typed-items="Robotics Engineer, Robot Learning Enthusiast">Robotics Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I'm pursuing a Master's in Computational Sciences in Engineering at Technische Universität Braunschweig, Germany, specializing in robot learning. My focus is on bringing the methods of computational engineering, such as simulation, numerical modelling and data-driven approaches, into robotics.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile.jpg" class="img-fluid about-photo" alt="Saran Karthikeyan Alaguvelraja">
+          </div>
+          <div class="col-lg-8 content">
+            <!-- Scroll rover: drives along the tags as you scroll into About (assets/js/rover.js) -->
+            <div class="tag-scroller" id="rover-scroll">
+              <div class="rover-track" id="rover-track">
+                <div class="rover" id="rover" aria-hidden="true">
+                  <svg viewBox="0 0 96 80" width="72" height="60">
+                    <g class="rv-body-group">
+                      <line x1="34" y1="22" x2="30" y2="8" class="rv-line"/>
+                      <circle cx="30" cy="7" r="3.2" class="rv-led"/>
+                      <rect x="14" y="22" width="44" height="30" rx="9" class="rv-body"/>
+                      <rect x="20" y="28" width="30" height="16" rx="6" class="rv-face"/>
+                      <g class="rv-eyes"><circle cx="29" cy="36" r="2.6" class="rv-eye"/><circle cx="41" cy="36" r="2.6" class="rv-eye"/></g>
+                      <path d="M31 41 q4 3 8 0" class="rv-smile"/>
+                      <g class="rv-arm" transform="translate(56 30)">
+                        <g class="rv-upper"><line x1="0" y1="0" x2="18" y2="0" class="rv-link"/>
+                          <g class="rv-fore" transform="translate(18 0)"><line x1="0" y1="0" x2="14" y2="0" class="rv-link"/>
+                            <path d="M14 -4 l5 -2 M14 4 l5 2" class="rv-claw"/><circle cx="0" cy="0" r="2.6" class="rv-joint"/></g>
+                          <circle cx="0" cy="0" r="3" class="rv-joint"/></g>
+                      </g>
+                    </g>
+                    <g class="rv-wheel" transform="translate(24 60)"><circle r="9" class="rv-tyre"/><line x1="-6" y1="0" x2="6" y2="0" class="rv-spoke"/><line x1="0" y1="-6" x2="0" y2="6" class="rv-spoke"/></g>
+                    <g class="rv-wheel" transform="translate(50 60)"><circle r="9" class="rv-tyre"/><line x1="-6" y1="0" x2="6" y2="0" class="rv-spoke"/><line x1="0" y1="-6" x2="0" y2="6" class="rv-spoke"/></g>
+                  </svg>
+                </div>
+                <div class="about-tags" id="about-tags"><span>Computational Robotics</span><span>Kinematics</span><span>Simulation</span><span>Sim-to-Real</span><span>Robot Learning</span></div>
+              </div>
+            </div>
+            <h2>Robotics &amp; Simulation Engineer in training.</h2>
+            <p class="fst-italic py-3">
+              I specialize in bridging the gap between digital design and real-world performance through system simulation, software development and prototyping.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Braunschweig, Germany · Flexible</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Seeking:</strong> <span>Internship &amp; Master's thesis</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              What excites me most right now is robot learning: teaching robots skills from data and experience instead of hand-coding every motion. I'm exploring areas like reinforcement learning, imitation learning and training in simulation for transfer to real hardware. My sim-to-real work on a vacuum gripper in NVIDIA Isaac Sim was my first step in this direction, and I'm building on it through the Robot Learning course at TU Braunschweig.
+            </p>
+            <div class="about-actions">
+              <button type="button" class="btn-cv primary" data-bs-toggle="modal" data-bs-target="#cvModal"><i class="bi bi-file-earmark-person"></i> View CV</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Education Section -->
+    <section id="education" class="resume education section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Education</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">University</h3>
+            <div class="resume-item">
+              <h4>M.Sc. Computational Sciences in Engineering</h4>
+              <h5>10/2024 – Present</h5>
+              <p><em>Technische Universität Braunschweig, Germany</em></p>
+              <p>Specializing in robot learning. Preliminary grade 2.6.</p>
+              <button type="button" class="detail-link" data-edu="edu-msc">View details <i class="bi bi-arrow-right"></i></button>
+            </div>
+            <div class="resume-item">
+              <h4>B.E. Mechanical Engineering</h4>
+              <h5>08/2020 – 03/2024</h5>
+              <p><em>R.M.K. College of Engineering and Technology, Thiruvallur, India</em></p>
+              <p>Final grade 1.8 (German grading scale). Bachelor's project: Automated Tower Parking System.</p>
+              <button type="button" class="detail-link" data-edu="edu-be">View details <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">School</h3>
+            <div class="resume-item">
+              <h4>Class XII · CBSE (AISSCE)</h4>
+              <h5>Passed 2020</h5>
+              <p><em>Velammal Vidyalaya, Mel Ayanambakkam, Chennai</em></p>
+              <p>Aggregate 83.5 %</p>
+              <button type="button" class="detail-link" data-edu="edu-12">View details <i class="bi bi-arrow-right"></i></button>
+            </div>
+            <div class="resume-item">
+              <h4>Class X · CBSE (AISSE)</h4>
+              <h5>Passed 2018</h5>
+              <p><em>Velammal Vidyalaya, Mel Ayanambakkam, Chennai</em></p>
+              <p>Aggregate 81.6 %</p>
+              <button type="button" class="detail-link" data-edu="edu-10">View details <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Education Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="resume experience section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
+          <h4>Student Supervisor (HiWi), Robotikpraktikum</h4>
+          <h5>10/2026 – Present</h5>
+          <p><em>Institut für Robotik und Prozessinformatik (IRP), Technische Universität Braunschweig</em></p>
+          <p>I supervise student groups in the robotics practical lab at IRP, guiding them through five experiments on industrial robots, computer vision, parallel kinematics, ROS and robot simulation. Select an experiment to see what it covers and what I handle.</p>
+
+          <div class="topic-grid">
+            <!-- Each button opens the experiment pop-up. Edit titles and texts in the TOPICS list near the end of this file. -->
+            <button type="button" class="topic-card" data-topic="0"><span class="topic-no">Experiment 1</span><span class="topic-name">Topic title coming soon</span><i class="bi bi-arrow-up-right"></i></button>
+            <button type="button" class="topic-card" data-topic="1"><span class="topic-no">Experiment 2</span><span class="topic-name">Topic title coming soon</span><i class="bi bi-arrow-up-right"></i></button>
+            <button type="button" class="topic-card" data-topic="2"><span class="topic-no">Experiment 3</span><span class="topic-name">Topic title coming soon</span><i class="bi bi-arrow-up-right"></i></button>
+            <button type="button" class="topic-card" data-topic="3"><span class="topic-no">Experiment 4</span><span class="topic-name">Topic title coming soon</span><i class="bi bi-arrow-up-right"></i></button>
+            <button type="button" class="topic-card" data-topic="4"><span class="topic-no">Experiment 5</span><span class="topic-name">Topic title coming soon</span><i class="bi bi-arrow-up-right"></i></button>
+          </div>
+        </div>
+
+        <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
+          <h4>Junior Engineer</h4>
+          <h5>04/2024 – 05/2024</h5>
+          <p><em>MicroLab, Chennai, India</em></p>
+          <ul>
+            <li><strong>Material testing:</strong> tensile and compressive strength analysis on Universal Testing Machines (UTM) against engineering standards.</li>
+            <li><strong>Destructive testing:</strong> impact (Charpy/Izod) and hardness tests to assess durability and failure limits.</li>
+            <li><strong>Quality documentation:</strong> recorded test data and wrote inspection reports for manufacturing teams.</li>
+            <li><strong>Lab safety &amp; maintenance:</strong> maintained test equipment and followed strict safety protocols.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section><!-- /Experience Section -->
+
+    <!-- Projects Section (uses the template's filterable portfolio grid) -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-sim">Simulation</li>
+            <li data-filter=".filter-robotics">Robotics</li>
+            <li data-filter=".filter-mechatronics">Mechatronics</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-6 portfolio-item isotope-item filter-sim filter-robotics">
+              <article class="project-card">
+                <a href="assets/img/portfolio/vacuum-gripper.svg" class="glightbox project-img" data-gallery="projects" title="Sim-to-Real Dynamic Passive Vacuum Gripper">
+                  <img src="assets/img/portfolio/vacuum-gripper.svg" class="img-fluid" alt="Drawing of a robot arm with a suction gripper lifting a box">
+                </a>
+                <div class="project-body">
+                  <div class="project-meta"><span>Master's specialization project</span><span>12/2025 – 03/2026</span></div>
+                  <h3>Sim-to-Real Dynamic Passive Vacuum Gripper</h3>
+                  <ul>
+                    <li>FEA in <strong>Abaqus CAE</strong> to model contact mechanics and sealing deformation at the gripper–object interface.</li>
+                    <li>Validated model implemented in <strong>NVIDIA Isaac Sim</strong> to simulate dynamic handling and leakage behaviour.</li>
+                    <li>Control environment deployed on an <strong>NVIDIA Jetson Orin Nano</strong> using <strong>ROS 2</strong>.</li>
+                    <li>Result: a working sim-to-real workflow to validate grasp stability and process reliability.</li>
+                  </ul>
+                  <div class="chips"><span>Abaqus</span><span>Isaac Sim</span><span>ROS 2</span><span>Jetson</span><span>Python</span></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6 portfolio-item isotope-item filter-mechatronics">
+              <article class="project-card">
+                <a href="assets/img/portfolio/tower-parking.svg" class="glightbox project-img" data-gallery="projects" title="Automated Tower Parking System">
+                  <img src="assets/img/portfolio/tower-parking.svg" class="img-fluid" alt="Drawing of a multi-level parking tower with a lift">
+                </a>
+                <div class="project-body">
+                  <div class="project-meta"><span>Bachelor's project</span><span>01/2024 – 03/2024</span></div>
+                  <h3>Automated Tower Parking System</h3>
+                  <ul>
+                    <li><strong>Mechanical design:</strong> custom linear actuators and structural mechanisms in PTC Creo, built with 3D printing.</li>
+                    <li><strong>Electronics:</strong> complete circuit logic on Arduino with stepper and servo motors for multi-axis motion.</li>
+                    <li><strong>Control logic:</strong> Python algorithms automating the parking sequence, synchronised with sensor feedback.</li>
+                    <li><strong>Assembly &amp; testing:</strong> built, wired and debugged the electromechanical prototype.</li>
+                  </ul>
+                  <div class="chips"><span>PTC Creo</span><span>3D printing</span><span>Arduino</span><span>Python</span></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6 portfolio-item isotope-item filter-robotics filter-sim">
+              <article class="project-card">
+                <a href="assets/img/portfolio/social-navigation.svg" class="glightbox project-img" data-gallery="projects" title="Social Navigation Planner">
+                  <img src="assets/img/portfolio/social-navigation.svg" class="img-fluid" alt="Drawing of a robot path curving around pedestrians">
+                </a>
+                <div class="project-body">
+                  <div class="project-meta"><span>Praktikum Advanced Robotics</span><span class="in-progress">WS 2026/27 · in progress</span></div>
+                  <h3>Social Navigation Planner in Arena</h3>
+                  <p>Developing a navigation planner that lets a mobile robot move safely and comfortably through spaces shared with people, evaluated on the Arena platform with the SMU Social Robotics Group.</p>
+                  <div class="chips"><span>Arena</span><span>ROS</span><span>Motion planning</span></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6 portfolio-item isotope-item filter-robotics filter-mechatronics">
+              <article class="project-card">
+                <a href="assets/img/portfolio/mecanum-robot.svg" class="glightbox project-img" data-gallery="projects" title="Mecanum-Drive Transport Robot">
+                  <img src="assets/img/portfolio/mecanum-robot.svg" class="img-fluid" alt="Top-view drawing of a mecanum-wheel robot chassis">
+                </a>
+                <div class="project-body">
+                  <div class="project-meta"><span>Industrieroboter Labor</span><span class="in-progress">WS 2026/27 · in progress</span></div>
+                  <h3>Mecanum-Drive Transport Robot</h3>
+                  <p>Group project building an Arduino-based mobile service and transport robot with omnidirectional mecanum drive.</p>
+                  <div class="chips"><span>Arduino</span><span>Mecanum drive</span><span>Mobile robotics</span></div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="certs-block" data-aos="fade-up">
+          <h3 class="sub-title">Licenses &amp; Certifications</h3>
+          <div class="cert-grid">
+            <button type="button" class="cert-tile" data-bs-toggle="modal" data-bs-target="#certB12">
+              <span class="cert-name">Deutsch B1.2</span>
+              <span class="cert-issuer">Technische Universität Braunschweig</span>
+              <span class="cert-date">Summer semester 2025</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+            <button type="button" class="cert-tile" data-bs-toggle="modal" data-bs-target="#certB11">
+              <span class="cert-name">Deutsch B1.1 (Compact Course)</span>
+              <span class="cert-issuer">Technische Universität Braunschweig</span>
+              <span class="cert-date">Winter semester 2024/25</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+            <button type="button" class="cert-tile" data-bs-toggle="modal" data-bs-target="#certModal">
+              <span class="cert-name">Professional in Mechanical CAD (AutoCAD &amp; Creo)</span>
+              <span class="cert-issuer">AIEMA Technology Centre (Diagonal CADD)</span>
+              <span class="cert-date">02/2022 – 06/2023</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Projects Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-group">
+              <i class="bi bi-bounding-box-circles"></i>
+              <h4>Design &amp; Simulation</h4>
+              <div class="chips">
+                <span>CATIA</span><span>PTC Creo</span><span>AutoCAD</span><span>SolidWorks</span><span>Ansys</span><span>Abaqus CAE</span><span>NVIDIA Isaac Sim</span><span>Robot simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-group">
+              <i class="bi bi-code-slash"></i>
+              <h4>Programming &amp; ML</h4>
+              <div class="chips">
+                <span>Python</span><span>PyTorch</span><span>C++</span><span>LaTeX</span><span>Arduino IDE</span><span>Deep learning</span><span>Neural networks</span><span>CNNs for object classification</span><span>Decision trees</span><span>Dataset preparation</span><span>Evaluation metrics</span><span>Vision-language models</span><span>LLMs &amp; tokenization</span><span>MLOps</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-group">
+              <i class="bi bi-cpu"></i>
+              <h4>Robotics &amp; Hardware</h4>
+              <div class="chips">
+                <span>ROS 2</span><span>NVIDIA Jetson Orin Nano</span><span>Arduino</span><span>Kinematics &amp; Jacobians</span><span>Trajectory planning</span><span>Learning perception</span><span>Dynamic Movement Primitives</span><span>Policy learning</span><span>Reinforcement learning</span><span>Imitation learning &amp; behavioural cloning</span><span>Agentic robotics</span><span>Social navigation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="skill-group">
+              <i class="bi bi-people"></i>
+              <h4>Soft Skills</h4>
+              <div class="chips">
+                <span>Time management</span><span>Planning &amp; execution</span><span>Communication</span><span>Teamwork</span><span>Strategic thinking</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="sub-title" data-aos="fade-up">Language Skills</h3>
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <!-- CEFR scale: fill = how many of A1 A2 B1 B2 C1 C2 are reached -->
+          <div class="col-lg-3 col-md-6">
+            <div class="lang-card">
+              <div class="lang-head"><h4>Tamil</h4><span class="lang-level">Native</span></div>
+              <div class="cefr" aria-label="Native speaker"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="lang-card">
+              <div class="lang-head"><h4>English</h4><span class="lang-level">C1</span></div>
+              <div class="cefr" aria-label="Level C1"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="lang-card">
+              <div class="lang-head"><h4>German</h4><span class="lang-level">B2</span></div>
+              <div class="cefr" aria-label="Level B2"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="lang-card">
+              <div class="lang-head"><h4>Hindi</h4><span class="lang-level">A2</span></div>
+              <div class="cefr" aria-label="Level A2"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Extra-curricular Section: links to a separate, personal page (life.html) -->
+    <section id="extracurricular" class="extracurricular section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Extra-curricular</h2>
+        <p>Life outside the lab. This lives on its own page.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <a href="life.html" class="life-link">
+          <span class="life-text">
+            <strong>Beyond robotics</strong>
+            <span>Content, films, music, sport and everyday life</span>
+          </span>
+          <i class="bi bi-arrow-right-circle"></i>
+        </a>
+      </div>
+
+    </section><!-- /Extra-curricular Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Location</h3>
+                  <p>Braunschweig, Germany</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call</h3>
+                  <p>+49 170 9029668</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p><a href="mailto:sarandeutsch@gmail.com">sarandeutsch@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/saran-karthikeyan-8b158a219/" target="_blank" rel="noopener">saran-karthikeyan</a></p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                <i class="bi bi-github flex-shrink-0"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <p><a href="https://github.com/saran24-06" target="_blank" rel="noopener">saran24-06</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- GitHub Pages can't run PHP, so this form opens the visitor's email app with the message filled in -->
+            <form id="mail-form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="8" id="message-field" required></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit">Write email</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Education pop-up -->
+  <div class="modal fade info-modal" id="eduModal" tabindex="-1" aria-labelledby="eduModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="eduModalLabel">Education</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <article class="edu-entry" id="edu-msc">
+            <h3>Master of Science (M.Sc.) · Computational Sciences in Engineering</h3>
+            <p class="edu-meta">Technische Universität Braunschweig · Braunschweig, Germany · Oct 2024 – Present</p>
+            <p>Engineering track: Solid and Structural Mechanics, with my own focus on robotics and robot learning.</p>
+            <ul>
+              <li><strong>Preliminary grade:</strong> 2.6</li>
+              <li><strong>Student Project:</strong> <em>FEA-based investigation and simulation of dynamic vacuum gripper behaviour in passive vacuum handling</em> · Grade 1.7</li>
+              <li><strong>Completed coursework:</strong> Ordinary Differential Equations, Partial Differential Equations, Numerical Methods for Ordinary and Partial Differential Equations, Algorithms &amp; Programming, Linear Continuum Mechanics, Nonlinear Solid Mechanics (1.7), Scientific Software Engineering – Lab, Robotics 1 – Technical and Mathematical Basics (1.7), Robotics 2 – Programming, Modelling, Planning, Introduction to Computational Engineering.</li>
+              <li><strong>Planned coursework:</strong> Robot Learning, Pattern Recognition, Industrieroboter, Industrieroboter Labor, Praktikum Advanced Robotics.</li>
+            </ul>
+          </article>
+
+          <article class="edu-entry" id="edu-be">
+            <h3>Bachelor of Engineering (B.E.) · Mechanical Engineering</h3>
+            <p class="edu-meta">R.M.K. College of Engineering and Technology · Thiruvallur, India · Aug 2020 – Mar 2024</p>
+            <ul>
+              <li><strong>Grade:</strong> 1.8 (German grading scale)</li>
+              <li><strong>Bachelor's project:</strong> <em>Automated Tower Parking System</em>, a mechatronic prototype with custom linear actuators (PTC Creo, 3D printing), Arduino-driven stepper and servo motors and Python control logic.</li>
+            </ul>
+          </article>
+
+          <article class="edu-entry" id="edu-12">
+            <h3>Class XII · Senior School Certificate Examination (CBSE)</h3>
+            <p class="edu-meta">Velammal Vidyalaya, Mel Ayanambakkam · Chennai, India · Passed 2020</p>
+            <ul>
+              <li><strong>Aggregate:</strong> 83.5 %</li>
+            </ul>
+          </article>
+
+          <article class="edu-entry" id="edu-10">
+            <h3>Class X · Secondary School Examination (CBSE)</h3>
+            <p class="edu-meta">Velammal Vidyalaya, Mel Ayanambakkam · Chennai, India · Passed 2018</p>
+            <ul>
+              <li><strong>Aggregate:</strong> 81.6 %</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate pop-up -->
+  <div class="modal fade info-modal" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="certModalLabel">Certificate · Professional in Mechanical CAD</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="edu-meta">AIEMA Technology Centre (Diagonal CADD) · Ambattur Industrial Estate, Chennai · Feb 2022 – Jun 2023 · Issued 20.06.2023</p>
+          <div class="cert-layout">
+            <a href="assets/img/certificates/mechanical-cad.jpg" target="_blank" rel="noopener" class="cert-img">
+              <img src="assets/img/certificates/mechanical-cad.jpg" alt="Certificate of Completion, Professional in Mechanical CAD, AutoCAD and Creo, awarded to A Saran Karthikeyan" loading="lazy">
+            </a>
+            <div class="cert-topics">
+              <h3>Topics covered</h3>
+              <div class="topic-cols">
+                <div>
+                  <h4>AutoCAD</h4>
+                  <p><strong>Conceptual drafting:</strong> interface, basic 2D primitives, modifying, drafting settings, parametric constraints, text and boundaries, hatching and tables, express tools and units, isometric snap.</p>
+                  <p><strong>Productivity tools:</strong> dimensions, blocks and attributes, Design Center and viewports, external references, page setup, scripts and recover/audit.</p>
+                  <p><strong>3D modeling:</strong> UCS, solid modeling and editing, 3D operations, layouts, plotting and export, rendering.</p>
+                </div>
+                <div>
+                  <h4>PTC Creo</h4>
+                  <p><strong>Part modeling:</strong> sketcher and basic part modeling, advanced part modeling, relations and family tables.</p>
+                  <p><strong>Assembly:</strong> bottom-up and top-down assembly, assembly relations, family tables.</p>
+                  <p><strong>Detailing:</strong> creating views, projections, dimensioning, sheet setup, tables, BOM balloons.</p>
+                  <p><strong>Sheet metal:</strong> walls, bend, die and punch, form features.</p>
+                  <p><strong>Mold design:</strong> single and multi-solid molding, runners and risers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade info-modal" id="certB12" tabindex="-1" aria-labelledby="certB12Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="certB12Label">Certificate · Deutsch B1.2</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="cert-layout">
+            <a href="assets/img/certificates/german-b1-2.jpg" target="_blank" rel="noopener" class="cert-img"><img src="assets/img/certificates/german-b1-2.jpg" alt="Assessment certificate, German B1.2, TU Braunschweig" loading="lazy"></a>
+            <div class="cert-topics">
+              <h3>Details</h3>
+              <dl class="cert-facts"><div><dt>Issuer</dt><dd>Technische Universität Braunschweig</dd></div><div><dt>Course</dt><dd>Deutsch B1.2 / German B1.2</dd></div><div><dt>CEFR level</dt><dd>B1.2</dd></div><div><dt>Semester</dt><dd>Summer semester 2025</dd></div><div><dt>Assessment</dt><dd>Written exam (90 min) and oral exam (15 min)</dd></div><div><dt>Grade</dt><dd>3.7</dd></div><div><dt>Credits</dt><dd>4 ECTS</dd></div></dl>
+              <p class="cert-verify">Verification no. SxhA-yHZ$-Rmtk at <a href="https://connect.tu-braunschweig.de/verify" target="_blank" rel="noopener">connect.tu-braunschweig.de/verify</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade info-modal" id="certB11" tabindex="-1" aria-labelledby="certB11Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="certB11Label">Certificate · Deutsch B1.1</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="cert-layout">
+            <a href="assets/img/certificates/german-b1-1.jpg" target="_blank" rel="noopener" class="cert-img"><img src="assets/img/certificates/german-b1-1.jpg" alt="Assessment certificate, German Compact Course B1.1, TU Braunschweig International House" loading="lazy"></a>
+            <div class="cert-topics">
+              <h3>Details</h3>
+              <dl class="cert-facts"><div><dt>Issuer</dt><dd>Technische Universität Braunschweig, International House</dd></div><div><dt>Course</dt><dd>Compact Course B1.1</dd></div><div><dt>CEFR level</dt><dd>B1</dd></div><div><dt>Semester</dt><dd>Winter semester 2024/25</dd></div><div><dt>Assessment</dt><dd>Written exam (90 min) and oral exam (15 min)</dd></div><div><dt>Grade</dt><dd>3.7</dd></div><div><dt>Credits</dt><dd>4 ECTS</dd></div></dl>
+              <p class="cert-verify">Verification code XRAZ-Y595-XZ5T at <a href="https://aura.sz.etc.tu-bs.de/semester-check/" target="_blank" rel="noopener">aura.sz.etc.tu-bs.de/semester-check</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lab topic pop-up (filled from the TOPICS list below) -->
+  <div class="modal fade topic-modal" id="topicModal" tabindex="-1" aria-labelledby="topicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="topic-modal-no" id="topicModalNo">Experiment 1</p>
+            <h2 class="modal-title" id="topicModalLabel">Topic title</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="topicModalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CV pop-up (opened from About, hero and sidebar) -->
+  <div class="modal fade cv-modal" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="cvModalLabel">Curriculum Vitae</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- CV shown as page images (no download or print bar). To update: export your CV pages as cv-1.jpg, cv-2.jpg into assets/img/cv/ -->
+          <div class="cv-pages" id="cv-pages">
+            <img data-src="assets/img/cv/cv-1.jpg" alt="CV of Saran Karthikeyan Alaguvelraja, page 1" draggable="false">
+            <img data-src="assets/img/cv/cv-2.jpg" alt="CV of Saran Karthikeyan Alaguvelraja, page 2" draggable="false">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#contact" class="btn-cv primary" id="request-cv">Request CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>2026</span> <strong class="px-1 sitename">Saran Karthikeyan Alaguvelraja</strong></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/rover.js"></script>
+  <script>
+    // ===== EDIT YOUR 5 LAB TOPICS HERE =====
+    // title: shown on the button and pop-up | summary: one or two sentences | tasks: what you handle as supervisor | tools: chips
+    var TOPICS = [
+      { title: 'Parallel Robots: Design, Analysis and Control (PRL)',
+        summary: 'Students design and build a five-bar parallel robot from aluminium profiles and passive joints, implement its inverse kinematics and control two motors so a pen on the end effector draws given paths on a board.',
+        tasks: ['Advise on mechanism design and workspace limits', 'Help with deriving the inverse kinematics (circle intersection)', 'Support motor zeroing, control and integration of the drawing task'],
+        tools: ['C++', 'Dynamixel SDK', 'Parallel kinematics', 'VS Code'] },
+      { title: 'ROS: Robot Operating System (ROS)',
+        summary: 'A hands-on introduction to ROS as robot middleware: nodes, topics and messages, launch files and catkin, networked ROS, remapping and parameters, visualisation, transforms and services.',
+        tasks: ['Explain core ROS concepts and the communication graph', 'Help students write and debug their own ROS nodes', 'Support networked setups, TF frames and services'],
+        tools: ['ROS', 'catkin', 'RViz', 'tf2', 'Python', 'C++', 'Raspberry Pi'] },
+      { title: 'Modelling and Simulation of Robots (SIM)',
+        summary: 'Students model the Stäubli TX60 in URDF, build the work cell in simulation and simulate the detect-and-grasp task, including inverse kinematics, path following, tracking the linear axis and dynamic properties.',
+        tasks: ['Guide URDF modelling of the robot and work cell', 'Support inverse kinematics and path-following tasks in simulation', 'Review the simulated experiment before it runs on the real cell'],
+        tools: ['URDF', 'V-REP (CoppeliaSim)', 'Lua', 'Inverse kinematics'] },
+      { title: 'Palletising with an Industrial Robot (PLT)',
+        summary: 'Students program an industrial manipulator to pick nuts from a dispenser rack and place them on all twelve tines of a pallet, learning path programming, pose teaching and iterative pose calculation.',
+        tasks: ['Introduce the robot cell and safe operation of the Stäubli TX60', 'Guide teaching of reference poses and calculation of the pallet grid', 'Review the full palletisation program and its verification'],
+        tools: ['Stäubli TX60', 'VAL3', 'Teach pendant', 'Gripper'] },
+      { title: 'Detect and Grasp an Object (DNG)',
+        summary: 'A camera-based pick-and-place task: the pose and shape of a cuboid and a cylinder on a moving linear axis are computed from image data, and the robot places each object at its own deposit pose.',
+        tasks: ['Support image processing for object pose and shape detection', 'Guide camera-to-robot referencing', 'Review the pick-and-place program and the feed-forward gripping on the moving axis'],
+        tools: ['OpenCV', 'C++', 'Camera', 'VAL3', 'Stäubli TX60'] }
+    ];
+
+    (function () {
+      var modalEl = document.getElementById('topicModal');
+      var modal = new bootstrap.Modal(modalEl);
+      var esc = function (t) { var d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+      document.querySelectorAll('.topic-card').forEach(function (btn) {
+        var t = TOPICS[+btn.dataset.topic];
+        btn.querySelector('.topic-name').textContent = t.title;
+        btn.addEventListener('click', function () {
+          document.getElementById('topicModalNo').textContent = 'Experiment ' + (+btn.dataset.topic + 1);
+          document.getElementById('topicModalLabel').textContent = t.title;
+          var html = '<p>' + esc(t.summary) + '</p>';
+          if (t.tasks.length) html += '<h3>What I handle</h3><ul>' + t.tasks.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+          if (t.tools.length) html += '<div class="chips">' + t.tools.map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div>';
+          document.getElementById('topicModalBody').innerHTML = html;
+          modal.show();
+        });
+      });
+    })();
+
+    // Education pop-up: open and jump to the selected entry
+    (function () {
+      var el = document.getElementById('eduModal');
+      var modal = new bootstrap.Modal(el);
+      var target = null;
+      document.querySelectorAll('[data-edu]').forEach(function (btn) {
+        btn.addEventListener('click', function () { target = btn.dataset.edu; modal.show(); });
+      });
+      el.addEventListener('shown.bs.modal', function () {
+        var entry = target && document.getElementById(target);
+        el.querySelectorAll('.edu-entry').forEach(function (e) { e.classList.toggle('focus', e === entry); });
+        if (entry) entry.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      });
+    })();
+
+    // CV pop-up: load the PDF only when opened; "Request CV" jumps to the contact form
+    (function () {
+      var modalEl = document.getElementById('cvModal');
+      var pages = modalEl.querySelectorAll('.cv-pages img');
+      modalEl.addEventListener('show.bs.modal', function () {
+        pages.forEach(function (img) { if (!img.src) img.src = img.dataset.src; });
+      });
+      modalEl.querySelector('.cv-pages').addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      document.getElementById('request-cv').addEventListener('click', function (e) {
+        e.preventDefault();
+        bootstrap.Modal.getInstance(modalEl).hide();
+        modalEl.addEventListener('hidden.bs.modal', function go() {
+          modalEl.removeEventListener('hidden.bs.modal', go);
+          var subj = document.getElementById('subject-field');
+          if (subj && !subj.value) subj.value = 'CV request';
+          document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    })();
+
+    // Contact form: open the visitor's email app with the message pre-filled
+    document.getElementById('mail-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target;
+      var body = f.message.value + '\n\n— ' + f.name.value + ' (' + f.email.value + ')';
+      window.location.href = 'mailto:sarandeutsch@gmail.com?subject=' + encodeURIComponent(f.subject.value) + '&body=' + encodeURIComponent(body);
+    });
+  </script>
+
+</body>
+
+</html>
