@@ -66,7 +66,7 @@
         <li><a href="#experience"><i class="bi bi-briefcase navicon"></i> Experience</a></li>
         <li><a href="#portfolio"><i class="bi bi-cpu navicon"></i> Projects</a></li>
         <li><a href="#skills"><i class="bi bi-tools navicon"></i> Skills</a></li>
-        <li><a href="#extracurricular"><i class="bi bi-stars navicon"></i> Extra-curricular</a></li>
+        <li hidden><a href="#extracurricular"><i class="bi bi-stars navicon"></i> Extra-curricular</a></li> <!-- delete "hidden" to show again -->
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -355,7 +355,7 @@
               <i class="bi bi-arrow-up-right"></i>
             </button>
             <button type="button" class="cert-tile" data-bs-toggle="modal" data-bs-target="#certB11">
-              <span class="cert-name">Deutsch B1.1 (Compact Course)</span>
+              <span class="cert-name">Deutsch B1.1</span>
               <span class="cert-issuer">Technische Universität Braunschweig</span>
               <span class="cert-date">Winter semester 2024/25</span>
               <i class="bi bi-arrow-up-right"></i>
@@ -387,7 +387,7 @@
               <i class="bi bi-bounding-box-circles"></i>
               <h4>Design &amp; Simulation</h4>
               <div class="chips">
-                <span>CATIA</span><span>PTC Creo</span><span>AutoCAD</span><span>SolidWorks</span><span>Ansys</span><span>Abaqus CAE</span><span>NVIDIA Isaac Sim</span><span>Robot simulation</span>
+                <span>PTC Creo</span><span>AutoCAD</span><span>Ansys</span><span>Abaqus CAE</span><span>NVIDIA Isaac Sim</span><span>Robot simulation</span>
               </div>
             </div>
           </div>
@@ -395,9 +395,9 @@
           <div class="col-lg-3 col-md-6">
             <div class="skill-group">
               <i class="bi bi-code-slash"></i>
-              <h4>Programming &amp; ML</h4>
+              <h4>Programming</h4>
               <div class="chips">
-                <span>Python</span><span>PyTorch</span><span>C++</span><span>LaTeX</span><span>Arduino IDE</span><span>Deep learning</span><span>Neural networks</span><span>CNNs for object classification</span><span>Decision trees</span><span>Dataset preparation</span><span>Evaluation metrics</span><span>Vision-language models</span><span>LLMs &amp; tokenization</span><span>MLOps</span>
+                <span>Python</span><span>PyTorch</span><span>C++</span><span>LaTeX</span><span>Arduino IDE</span>
               </div>
             </div>
           </div>
@@ -407,7 +407,7 @@
               <i class="bi bi-cpu"></i>
               <h4>Robotics &amp; Hardware</h4>
               <div class="chips">
-                <span>ROS 2</span><span>NVIDIA Jetson Orin Nano</span><span>Arduino</span><span>Kinematics &amp; Jacobians</span><span>Trajectory planning</span><span>Learning perception</span><span>Dynamic Movement Primitives</span><span>Policy learning</span><span>Reinforcement learning</span><span>Imitation learning &amp; behavioural cloning</span><span>Agentic robotics</span><span>Social navigation</span>
+                <span>ROS 2</span><span>NVIDIA Jetson Orin Nano</span><span>Arduino</span>
               </div>
             </div>
           </div>
@@ -427,31 +427,17 @@
         <h3 class="sub-title" data-aos="fade-up">Language Skills</h3>
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <!-- CEFR scale: fill = how many of A1 A2 B1 B2 C1 C2 are reached -->
-          <div class="col-lg-3 col-md-6">
-            <div class="lang-card">
-              <div class="lang-head"><h4>Tamil</h4><span class="lang-level">Native</span></div>
-              <div class="cefr" aria-label="Native speaker"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
-              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="lang-card">
               <div class="lang-head"><h4>English</h4><span class="lang-level">C1</span></div>
               <div class="cefr" aria-label="Level C1"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
               <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="lang-card">
               <div class="lang-head"><h4>German</h4><span class="lang-level">B2</span></div>
               <div class="cefr" aria-label="Level B2"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
-              <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="lang-card">
-              <div class="lang-head"><h4>Hindi</h4><span class="lang-level">A2</span></div>
-              <div class="cefr" aria-label="Level A2"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
               <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
             </div>
           </div>
@@ -461,7 +447,7 @@
     </section><!-- /Skills Section -->
 
     <!-- Extra-curricular Section: links to a separate, personal page (life.html) -->
-    <section id="extracurricular" class="extracurricular section light-background">
+    <section id="extracurricular" class="extracurricular section light-background" hidden> <!-- delete "hidden" to show again -->
 
       <div class="container section-title" data-aos="fade-up">
         <h2>Extra-curricular</h2>
@@ -691,10 +677,10 @@
         </div>
         <div class="modal-body">
           <div class="cert-layout">
-            <a href="assets/img/certificates/german-b1-1.jpg" target="_blank" rel="noopener" class="cert-img"><img src="assets/img/certificates/german-b1-1.jpg" alt="Assessment certificate, German Compact Course B1.1, TU Braunschweig International House" loading="lazy"></a>
+            <a href="assets/img/certificates/german-b1-1.jpg" target="_blank" rel="noopener" class="cert-img"><img src="assets/img/certificates/german-b1-1.jpg" alt="Assessment certificate, German B1.1, TU Braunschweig International House" loading="lazy"></a>
             <div class="cert-topics">
               <h3>Details</h3>
-              <dl class="cert-facts"><div><dt>Issuer</dt><dd>Technische Universität Braunschweig, International House</dd></div><div><dt>Course</dt><dd>Compact Course B1.1</dd></div><div><dt>CEFR level</dt><dd>B1</dd></div><div><dt>Semester</dt><dd>Winter semester 2024/25</dd></div><div><dt>Assessment</dt><dd>Written exam (90 min) and oral exam (15 min)</dd></div><div><dt>Grade</dt><dd>3.7</dd></div><div><dt>Credits</dt><dd>4 ECTS</dd></div></dl>
+              <dl class="cert-facts"><div><dt>Issuer</dt><dd>Technische Universität Braunschweig, International House</dd></div><div><dt>Course</dt><dd>Deutsch B1.1 / German B1.1</dd></div><div><dt>CEFR level</dt><dd>B1</dd></div><div><dt>Semester</dt><dd>Winter semester 2024/25</dd></div><div><dt>Assessment</dt><dd>Written exam (90 min) and oral exam (15 min)</dd></div><div><dt>Grade</dt><dd>3.7</dd></div><div><dt>Credits</dt><dd>4 ECTS</dd></div></dl>
               <p class="cert-verify">Verification code XRAZ-Y595-XZ5T at <a href="https://aura.sz.etc.tu-bs.de/semester-check/" target="_blank" rel="noopener">aura.sz.etc.tu-bs.de/semester-check</a></p>
             </div>
           </div>
@@ -731,7 +717,6 @@
           <!-- CV shown as page images (no download or print bar). To update: export your CV pages as cv-1.jpg, cv-2.jpg into assets/img/cv/ -->
           <div class="cv-pages" id="cv-pages">
             <img data-src="assets/img/cv/cv-1.jpg" alt="CV of Saran Karthikeyan Alaguvelraja, page 1" draggable="false">
-            <img data-src="assets/img/cv/cv-2.jpg" alt="CV of Saran Karthikeyan Alaguvelraja, page 2" draggable="false">
           </div>
         </div>
         <div class="modal-footer justify-content-center">
