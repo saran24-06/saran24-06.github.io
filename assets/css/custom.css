@@ -859,3 +859,58 @@ button.btn-cv {
   font-size: 13.5px;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
 }
+
+/* ---------- Language switch (EN / DE) ---------- */
+.lang-switch {
+  position: fixed;
+  top: calc(15px + env(safe-area-inset-top, 0px));
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  z-index: 1040;                   /* above the page, below pop-ups (1050+) */
+  display: flex;
+  padding: 3px;
+  gap: 2px;
+  border-radius: 50px;
+  background: rgba(4, 11, 20, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lang-switch a {
+  font-family: var(--nav-font);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 10px 13px;
+  border-radius: 50px;
+  color: #c9d3dd;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-switch a:hover {
+  color: #ffffff;
+}
+
+.lang-switch a.active {
+  background: var(--accent-color);
+  color: #ffffff;
+  cursor: default;
+}
+
+.lang-switch a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* below 1200px the template shows its round menu button at top-right; sit to its left */
+@media (max-width: 1199px) {
+  .lang-switch {
+    right: calc(65px + env(safe-area-inset-right, 0px));
+  }
+}
+
+/* language level in progress: half-filled segment (e.g. German B2) */
+.cefr i.part {
+  background: linear-gradient(90deg, var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 50%);
+}

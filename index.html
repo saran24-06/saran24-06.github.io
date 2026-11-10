@@ -8,6 +8,10 @@
   <meta content="Portfolio of Saran Karthikeyan Alaguvelraja, M.Sc. student in Computational Sciences in Engineering at TU Braunschweig, working on robotics, simulation and sim-to-real transfer." name="description">
   <meta content="Saran Karthikeyan Alaguvelraja, robotics, Isaac Sim, ROS 2, sim-to-real, TU Braunschweig, mechanical engineering" name="keywords">
 
+  <!-- Language versions -->
+  <link rel="alternate" hreflang="en" href="https://saran24-06.github.io/">
+  <link rel="alternate" hreflang="de" href="https://saran24-06.github.io/de.html">
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -39,6 +43,12 @@
 </head>
 
 <body class="index-page">
+
+  <!-- Language switch (English page is index.html, German page is de.html) -->
+  <nav class="lang-switch" aria-label="Language">
+    <a href="index.html" class="active" hreflang="en" lang="en" aria-current="page">EN</a>
+    <a href="de.html" hreflang="de" lang="de">DE</a>
+  </nav>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -225,8 +235,8 @@
         <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
           <h4>Student Supervisor (HiWi), Robotikpraktikum</h4>
           <h5>10/2026 – Present</h5>
-          <p><em>Institut für Robotik und Prozessinformatik (IRP), Technische Universität Braunschweig</em></p>
-          <p>I supervise student groups in the robotics practical lab at IRP, guiding them through five experiments on industrial robots, computer vision, parallel kinematics, ROS and robot simulation. Select an experiment to see what it covers and what I handle.</p>
+          <p><em>Institute for Cognitive Robotics, Technische Universität Braunschweig</em></p>
+          <p>I supervise student groups in the Robotikpraktikum, guiding them through five experiments on industrial robots, computer vision, parallel kinematics, ROS and robot simulation. Select an experiment to see what it covers and what I handle.</p>
 
           <div class="topic-grid">
             <!-- Each button opens the experiment pop-up. Edit titles and texts in the TOPICS list near the end of this file. -->
@@ -240,7 +250,7 @@
 
         <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
           <h4>Junior Engineer</h4>
-          <h5>04/2024 – 05/2024</h5>
+          <h5>03/2024 – 05/2024</h5>
           <p><em>MicroLab, Chennai, India</em></p>
           <ul>
             <li><strong>Material testing:</strong> tensile and compressive strength analysis on Universal Testing Machines (UTM) against engineering standards.</li>
@@ -436,8 +446,8 @@
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="lang-card">
-              <div class="lang-head"><h4>German</h4><span class="lang-level">B2</span></div>
-              <div class="cefr" aria-label="Level B2"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+              <div class="lang-head"><h4>German</h4><span class="lang-level">B1 · B2 in progress</span></div>
+              <div class="cefr" aria-label="Level B1, B2 in progress"><i class="on"></i><i class="on"></i><i class="on"></i><i class="part"></i><i></i><i></i></div>
               <div class="cefr-scale"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
             </div>
           </div>
@@ -714,9 +724,9 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- CV shown as page images (no download or print bar). To update: export your CV pages as cv-1.jpg, cv-2.jpg into assets/img/cv/ -->
+          <!-- CV shown as a page image (no download or print bar). To update: replace assets/img/cv/cv-en.jpg (German page uses cv-de.jpg) -->
           <div class="cv-pages" id="cv-pages">
-            <img data-src="assets/img/cv/cv-1.jpg" alt="CV of Saran Karthikeyan Alaguvelraja, page 1" draggable="false">
+            <img data-src="assets/img/cv/cv-en.jpg" alt="CV of Saran Karthikeyan Alaguvelraja" draggable="false">
           </div>
         </div>
         <div class="modal-footer justify-content-center">
@@ -841,6 +851,15 @@
         });
       });
     })();
+
+    // Language switch: keep the current section (#hash) when switching
+    document.querySelectorAll('.lang-switch a').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (a.classList.contains('active')) { e.preventDefault(); return; }
+        try { localStorage.setItem('lang', a.getAttribute('hreflang')); } catch (err) {}
+        if (location.hash) { e.preventDefault(); location.href = a.getAttribute('href') + location.hash; }
+      });
+    });
 
     // Contact form: open the visitor's email app with the message pre-filled
     document.getElementById('mail-form').addEventListener('submit', function (e) {
