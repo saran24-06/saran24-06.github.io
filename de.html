@@ -286,9 +286,9 @@
 
             <div class="col-lg-6 portfolio-item isotope-item filter-sim filter-robotics">
               <article class="project-card">
-                <a href="assets/img/portfolio/vacuum-gripper.svg" class="glightbox project-img" data-gallery="projects" title="Sim-to-Real: dynamischer passiver Vakuumgreifer">
+                <button type="button" class="project-img" data-bs-toggle="modal" data-bs-target="#projVacuum" title="Sim-to-Real: dynamischer passiver Vakuumgreifer">
                   <img src="assets/img/portfolio/vacuum-gripper.svg" class="img-fluid" alt="Zeichnung eines Roboterarms mit Sauggreifer, der eine Kiste hebt">
-                </a>
+                </button>
                 <div class="project-body">
                   <div class="project-meta"><span>Studienprojekt im Master</span><span>12/2025 – 03/2026</span></div>
                   <h3>Sim-to-Real: dynamischer passiver Vakuumgreifer</h3>
@@ -299,25 +299,27 @@
                     <li>Ergebnis: ein funktionierender Sim-to-Real-Workflow zur Prüfung von Griffstabilität und Prozesssicherheit.</li>
                   </ul>
                   <div class="chips"><span>Abaqus</span><span>Isaac Sim</span><span>ROS 2</span><span>Jetson</span><span>Python</span></div>
+                  <button type="button" class="detail-link" data-bs-toggle="modal" data-bs-target="#projVacuum">Projekt ansehen <i class="bi bi-arrow-right"></i></button>
                 </div>
               </article>
             </div>
 
             <div class="col-lg-6 portfolio-item isotope-item filter-mechatronics">
               <article class="project-card">
-                <a href="assets/img/portfolio/tower-parking.svg" class="glightbox project-img" data-gallery="projects" title="Automatisches Turmparksystem">
+                <button type="button" class="project-img" data-bs-toggle="modal" data-bs-target="#projTower" title="Automatisches Turmparksystem">
                   <img src="assets/img/portfolio/tower-parking.svg" class="img-fluid" alt="Zeichnung eines mehrstöckigen Parkturms mit Aufzug">
-                </a>
+                </button>
                 <div class="project-body">
                   <div class="project-meta"><span>Bachelorprojekt</span><span>01/2024 – 03/2024</span></div>
                   <h3>Automatisches Turmparksystem</h3>
                   <ul>
-                    <li><strong>Konstruktion:</strong> Linearaktuatoren und mechanische Strukturen in PTC Creo, gefertigt im 3D-Druck.</li>
+                    <li><strong>Konstruktion:</strong> Turmrahmen aus Aluminium, Spindel-Linearaktuator und mechanische Strukturen in PTC Creo, mit einem 3D-gedruckten Schlitten.</li>
                     <li><strong>Elektronik:</strong> komplette Schaltungslogik mit Arduino, Schritt- und Servomotoren für Mehrachsbewegungen.</li>
-                    <li><strong>Steuerung:</strong> Python-Algorithmen zur Automatisierung des Parkvorgangs, synchronisiert mit Sensor-Feedback.</li>
+                    <li><strong>Steuerung:</strong> Arduino-Firmware in C++ zur Automatisierung der Ein- und Ausparkabläufe, synchronisiert mit Sensor-Feedback.</li>
                     <li><strong>Montage &amp; Test:</strong> Aufbau, Verdrahtung und Fehlersuche am elektromechanischen Prototyp.</li>
                   </ul>
-                  <div class="chips"><span>PTC Creo</span><span>3D-Druck</span><span>Arduino</span><span>Python</span></div>
+                  <div class="chips"><span>PTC Creo</span><span>3D-Druck</span><span>Arduino</span><span>C++</span></div>
+                  <button type="button" class="detail-link" data-bs-toggle="modal" data-bs-target="#projTower">Projekt ansehen <i class="bi bi-arrow-right"></i></button>
                 </div>
               </article>
             </div>
@@ -593,7 +595,7 @@
             <p class="edu-meta">R.M.K. College of Engineering and Technology · Thiruvallur, Indien · Aug. 2020 – März 2024</p>
             <ul>
               <li><strong>Abschlussnote:</strong> 1,8 (deutsche Notenskala)</li>
-              <li><strong>Bachelorprojekt:</strong> <em>Automatisches Turmparksystem</em>, ein mechatronischer Prototyp mit selbst konstruierten Linearaktuatoren (PTC Creo, 3D-Druck), Arduino-gesteuerten Schritt- und Servomotoren und Python-Steuerungslogik.</li>
+              <li><strong>Bachelorprojekt:</strong> <em>Automatisches Turmparksystem</em>, ein mechatronischer Prototyp mit Aluminiumrahmen, einem Spindel-Linearaktuator mit 3D-gedrucktem Schlitten (PTC Creo), Arduino-gesteuerten Schritt- und Servomotoren und einer Steuerung in Arduino C++.</li>
             </ul>
           </article>
 
@@ -670,7 +672,6 @@
             <div class="cert-topics">
               <h3>Details</h3>
               <dl class="cert-facts"><div><dt>Aussteller</dt><dd>Technische Universität Braunschweig</dd></div><div><dt>Kurs</dt><dd>Deutsch B1.2</dd></div><div><dt>GER-Niveau</dt><dd>B1.2</dd></div><div><dt>Semester</dt><dd>Sommersemester 2025</dd></div><div><dt>Prüfung</dt><dd>Klausur (90 Min.) und mündliche Prüfung (15 Min.)</dd></div><div><dt>Note</dt><dd>3,7</dd></div><div><dt>Leistungspunkte</dt><dd>4 ECTS</dd></div></dl>
-              <p class="cert-verify">Prüfnummer SxhA-yHZ$-Rmtk unter <a href="https://connect.tu-braunschweig.de/verify" target="_blank" rel="noopener">connect.tu-braunschweig.de/verify</a></p>
             </div>
           </div>
         </div>
@@ -691,8 +692,205 @@
             <div class="cert-topics">
               <h3>Details</h3>
               <dl class="cert-facts"><div><dt>Aussteller</dt><dd>Technische Universität Braunschweig, International House</dd></div><div><dt>Kurs</dt><dd>Deutsch B1.1</dd></div><div><dt>GER-Niveau</dt><dd>B1</dd></div><div><dt>Semester</dt><dd>Wintersemester 2024/25</dd></div><div><dt>Prüfung</dt><dd>Klausur (90 Min.) und mündliche Prüfung (15 Min.)</dd></div><div><dt>Note</dt><dd>3,7</dd></div><div><dt>Leistungspunkte</dt><dd>4 ECTS</dd></div></dl>
-              <p class="cert-verify">Prüfcode XRAZ-Y595-XZ5T unter <a href="https://aura.sz.etc.tu-bs.de/semester-check/" target="_blank" rel="noopener">aura.sz.etc.tu-bs.de/semester-check</a></p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project pop-up: Sim-to-Real Dynamic Passive Vacuum Gripper.
+       data-public="true" shows the GitHub button; "false" shows "Code: private for now" instead. -->
+  <div class="modal fade project-modal" id="projVacuum" tabindex="-1" aria-labelledby="projVacuumLabel" aria-hidden="true" data-public="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="proj-eyebrow">Studienprojekt im Master · 12/2025 – 03/2026</p>
+            <h2 class="modal-title" id="projVacuumLabel">Sim-to-Real: dynamischer passiver Vakuumgreifer</h2>
+            <p class="proj-sub">Institut für Werkzeugmaschinen und Fertigungstechnik (IWF), TU Braunschweig · Note 1,7</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="proj-bar">
+          <ul class="nav proj-tabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#projVacuum-overview" type="button" role="tab">Überblick</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#projVacuum-gallery" type="button" role="tab">Galerie</button></li>
+          </ul>
+          <a class="btn-repo" href="https://github.com/saran24-06/passive-vacuum-gripper-simulation" target="_blank" rel="noopener" data-repo><i class="bi bi-github"></i> Code auf GitHub ansehen</a>
+          <span class="btn-repo is-private" data-repo-private><i class="bi bi-lock"></i> Code: vorerst privat</span>
+        </div>
+        <div class="modal-body">
+          <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="projVacuum-overview" role="tabpanel">
+              <div class="proj-overview">
+                <figure class="proj-hero">
+                  <img data-src="assets/projects/vacuum-gripper/compression_and_lift.gif" alt="Animiertes FE-Modell des Saugnapfs beim Komprimieren, Abdichten und Anheben eines Objekts">
+                  <figcaption>FE-Modell: Kompression, Abdichtung und Anheben</figcaption>
+                </figure>
+                <div class="proj-text">
+                  <p>Ein hybrides Simulations-Framework, das vorhersagt, wie ein passiver Vakuumsauggreifer abdichtet, Vakuum aufbaut, ein Objekt anhebt und wieder loslässt. Ein nichtlineares Finite-Elemente-Modell in Abaqus bildet die Verformung des Elastomer-Faltenbalgs ab. Das entstehende Vakuum wird aus dem Hohlraumvolumen berechnet, in das Modell zurückgeführt und steuert eine Greifaufgabe mit einem Franka Emika Panda in NVIDIA Isaac Sim.</p>
+                  <h3>Meine Arbeit</h3>
+                  <ul>
+                    <li>Aufbau eines 2D-axialsymmetrischen FE-Modells mit Mooney-Rivlin-Material (NBR-55), Reibungs- und Selbstkontakt sowie verfeinertem Netz an der Dichtlippe.</li>
+                    <li>Erkennung des Abdichtzeitpunkts über Kontaktöffnung und Kontaktdruck an einem Ring von Lippenknoten.</li>
+                    <li>Berechnung des Hohlraumvolumens in jedem Inkrement und Ableitung des Unterdrucks mit dem Gesetz von Boyle-Mariotte.</li>
+                    <li>Automatisierung der gesamten Schleife in Python: Druck zurück in die Eingabedatei schreiben, Anheben neu rechnen, anschließend Abzugsversuch für die Haltekraft.</li>
+                    <li>Nutzung der Druck-Weg-Kurve als Ersatzmodell in Isaac Sim: Eine Zustandsmaschine für den Franka greift und hebt an, sobald das Vakuum 0,020 MPa übersteigt.</li>
+                  </ul>
+                  <h3>Wichtigste Ergebnisse</h3>
+                  <ul>
+                    <li>Unterdruck von etwa −0,025 MPa beim vollen Hub von 16 mm.</li>
+                    <li>Maximale Von-Mises-Spannung von etwa 0,28 MPa, weit unter der Festigkeit von NBR-Gummi.</li>
+                    <li>Die Dichtung bleibt beim Anheben geschlossen, und die Haltekraft übersteigt die geforderten 2,3 N.</li>
+                    <li>Haltezeit von etwa 66 s bei einer angenommenen Leckrate von 10 cm³/min.</li>
+                  </ul>
+                  <p class="proj-note">Nächster Schritt: Validierung der Vorhersagen am realen Franka-Aufbau.</p>
+                  <div class="chips"><span>Abaqus/CAE 2024</span><span>Python (ODB API)</span><span>NVIDIA Isaac Sim</span><span>Lula IK</span><span>ROS 2</span><span>Jetson Orin Nano</span><span>PTC Creo</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="projVacuum-gallery" role="tabpanel">
+              <div class="proj-gallery">
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Axialsymmetrisches FE-Modell: Kompression, Abdichtung und Anheben"><img data-src="assets/projects/vacuum-gripper/compression_and_lift.gif" alt="Axialsymmetrisches FE-Modell: Kompression, Abdichtung und Anheben" loading="lazy"></button>
+                <figcaption>Axialsymmetrisches FE-Modell: Kompression, Abdichtung und Anheben</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Gekoppeltes Vakuum-Struktur-Anheben, in 3D rotiert"><img data-src="assets/projects/vacuum-gripper/lifting_3d.gif" alt="Gekoppeltes Vakuum-Struktur-Anheben, in 3D rotiert" loading="lazy"></button>
+                <figcaption>Gekoppeltes Vakuum-Struktur-Anheben, in 3D rotiert</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Abzugsversuch: Die Dichtlippe löst sich ab"><img data-src="assets/projects/vacuum-gripper/pull_off.gif" alt="Abzugsversuch: Die Dichtlippe löst sich ab" loading="lazy"></button>
+                <figcaption>Abzugsversuch: Die Dichtlippe löst sich ab</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: FE-Netz, an der Dichtlippe verfeinert"><img data-src="assets/projects/vacuum-gripper/fea_mesh.jpg" alt="FE-Netz, an der Dichtlippe verfeinert" loading="lazy"></button>
+                <figcaption>FE-Netz, an der Dichtlippe verfeinert</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Unverformter Faltenbalg (t = 0)"><img data-src="assets/projects/vacuum-gripper/deformation_kinematic_1.jpg" alt="Unverformter Faltenbalg (t = 0)" loading="lazy"></button>
+                <figcaption>Unverformter Faltenbalg (t = 0)</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Maximale Kompression (16 mm Hub)"><img data-src="assets/projects/vacuum-gripper/deformation_kinematic_2.jpg" alt="Maximale Kompression (16 mm Hub)" loading="lazy"></button>
+                <figcaption>Maximale Kompression (16 mm Hub)</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Kontaktdruck beim Abdichten"><img data-src="assets/projects/vacuum-gripper/cpress_seal.jpg" alt="Kontaktdruck beim Abdichten" loading="lazy"></button>
+                <figcaption>Kontaktdruck beim Abdichten</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Berechneter Unterdruck während des Hubs"><img data-src="assets/projects/vacuum-gripper/pressure_vs_displacement.jpg" alt="Berechneter Unterdruck während des Hubs" loading="lazy"></button>
+                <figcaption>Berechneter Unterdruck während des Hubs</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Lastfolge: Kompression, Halten, Abziehen"><img data-src="assets/projects/vacuum-gripper/load_sequence.jpg" alt="Lastfolge: Kompression, Halten, Abziehen" loading="lazy"></button>
+                <figcaption>Lastfolge: Kompression, Halten, Abziehen</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Greifer am Franka-Flansch (Isaac Sim)"><img data-src="assets/projects/vacuum-gripper/isaac_flange_1.jpg" alt="Greifer am Franka-Flansch (Isaac Sim)" loading="lazy"></button>
+                <figcaption>Greifer am Franka-Flansch (Isaac Sim)</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Isaac Sim: Annäherung"><img data-src="assets/projects/vacuum-gripper/isaac_approach.jpg" alt="Isaac Sim: Annäherung" loading="lazy"></button>
+                <figcaption>Isaac Sim: Annäherung</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Isaac Sim: Kontakt"><img data-src="assets/projects/vacuum-gripper/isaac_contact.jpg" alt="Isaac Sim: Kontakt" loading="lazy"></button>
+                <figcaption>Isaac Sim: Kontakt</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Isaac Sim: Greifen und Anheben"><img data-src="assets/projects/vacuum-gripper/isaac_grasp.jpg" alt="Isaac Sim: Greifen und Anheben" loading="lazy"></button>
+                <figcaption>Isaac Sim: Greifen und Anheben</figcaption>
+              </figure>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project pop-up: Automated Tower Parking System.
+       data-public="true" shows the GitHub button; "false" shows "Code: private for now" instead. -->
+  <div class="modal fade project-modal" id="projTower" tabindex="-1" aria-labelledby="projTowerLabel" aria-hidden="true" data-public="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p class="proj-eyebrow">Bachelorprojekt · 01/2024 – 03/2024</p>
+            <h2 class="modal-title" id="projTowerLabel">Automatisches Turmparksystem</h2>
+            <p class="proj-sub">R.M.K. College of Engineering and Technology · Gruppenprojekt</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+        </div>
+        <div class="proj-bar">
+          <ul class="nav proj-tabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#projTower-overview" type="button" role="tab">Überblick</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#projTower-gallery" type="button" role="tab">Galerie</button></li>
+          </ul>
+          <a class="btn-repo" href="https://github.com/saran24-06/automated-tower-parking-system" target="_blank" rel="noopener" data-repo><i class="bi bi-github"></i> Code auf GitHub ansehen</a>
+          <span class="btn-repo is-private" data-repo-private><i class="bi bi-lock"></i> Code: vorerst privat</span>
+        </div>
+        <div class="modal-body">
+          <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="projTower-overview" role="tabpanel">
+              <div class="proj-overview">
+                <figure class="proj-hero">
+                  <video controls playsinline preload="none" poster="assets/projects/tower-parking/demo-poster.jpg" aria-label="Demovideo: Einparken eines Autos">
+                    <source src="assets/projects/tower-parking/demo.mp4" type="video/mp4">
+                  </video>
+                  <figcaption>Demovideo (Echtzeit, 1:21): Einparken eines Autos</figcaption>
+                </figure>
+                <div class="proj-text">
+                  <p>Ein funktionsfähiges Modell eines Turmparksystems. Der Fahrer gibt einen Code am Tastenfeld ein, ein Spindelaufzug bringt das Auto zu einem von sechs Stellplätzen auf zwei Ebenen, und ein LCD zeigt in Echtzeit, welche Plätze frei sind. Abschlussprojekt in einer Gruppe.</p>
+                  <h3>Highlights</h3>
+                  <ul>
+                    <li>Turmrahmen aus Aluminium, Spindel-Linearaktuator mit 3D-gedrucktem Schlitten, servogetriebener Hubarm und auskragende Paletten, konstruiert in AutoCAD und PTC Creo.</li>
+                    <li>Ein- und Ausparkabläufe per Tastenfeld für 6 Stellplätze auf 2 Ebenen. Zum Beispiel parkt B2* ein Auto auf Ebene B, Platz 2.</li>
+                    <li>Stellplatzbelegung in Echtzeit über 6 IR-Sensoren, angezeigt auf einem I2C-LCD.</li>
+                    <li>Drei Arduino-UNO-Boards für Aufzugssteuerung, Stellplatzanzeige sowie Ein- und Ausfahrtsschranken; Schaltungen in Tinkercad simuliert.</li>
+                    <li>Gesamtkosten des Aufbaus von etwa 12.200 ₹.</li>
+                  </ul>
+                  <div class="chips"><span>Arduino UNO</span><span>C++</span><span>Schritt- &amp; Servomotoren</span><span>IR-Sensoren</span><span>AutoCAD</span><span>PTC Creo</span><span>3D-Druck</span><span>Tinkercad</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="projTower-gallery" role="tabpanel">
+              <div class="proj-gallery">
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Fertiges Funktionsmodell"><img data-src="assets/projects/tower-parking/model_front.jpg" alt="Fertiges Funktionsmodell" loading="lazy"></button>
+                <figcaption>Fertiges Funktionsmodell</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Prototyp des Linearaktuators"><img data-src="assets/projects/tower-parking/linear_actuator_prototype.jpg" alt="Prototyp des Linearaktuators" loading="lazy"></button>
+                <figcaption>Prototyp des Linearaktuators</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Ablaufdiagramm der Steuerung für alle 12 Ein- und Ausparkfälle"><img data-src="assets/projects/tower-parking/flowchart.jpg" alt="Ablaufdiagramm der Steuerung für alle 12 Ein- und Ausparkfälle" loading="lazy"></button>
+                <figcaption>Ablaufdiagramm der Steuerung für alle 12 Ein- und Ausparkfälle</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Blockschaltbild: Aufzug (Linearaktuator)"><img data-src="assets/projects/tower-parking/block_diagram_lift.jpg" alt="Blockschaltbild: Aufzug (Linearaktuator)" loading="lazy"></button>
+                <figcaption>Blockschaltbild: Aufzug (Linearaktuator)</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Blockschaltbild: Stellplatzbelegung"><img data-src="assets/projects/tower-parking/block_diagram_slot_display.jpg" alt="Blockschaltbild: Stellplatzbelegung" loading="lazy"></button>
+                <figcaption>Blockschaltbild: Stellplatzbelegung</figcaption>
+              </figure>
+              <figure>
+                <button type="button" class="proj-shot" aria-label="Vergrößern: Blockschaltbild: Ein- und Ausfahrtsschranken"><img data-src="assets/projects/tower-parking/block_diagram_gates.jpg" alt="Blockschaltbild: Ein- und Ausfahrtsschranken" loading="lazy"></button>
+                <figcaption>Blockschaltbild: Ein- und Ausfahrtsschranken</figcaption>
+              </figure>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -724,9 +922,9 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
         </div>
         <div class="modal-body">
-          <!-- CV shown as a page image (no download or print bar). To update: replace assets/img/cv/cv-en.jpg (German page uses cv-de.jpg) -->
+          <!-- CV shown as a page image (no download or print bar). Vector images (sharp at any zoom). To update: replace assets/img/cv/cv-en.svg (German page uses cv-de.svg) -->
           <div class="cv-pages" id="cv-pages">
-            <img data-src="assets/img/cv/cv-de.jpg" alt="Lebenslauf von Saran Karthikeyan Alaguvelraja" draggable="false">
+            <img data-src="assets/img/cv/cv-de.svg" alt="Lebenslauf von Saran Karthikeyan Alaguvelraja" draggable="false">
           </div>
         </div>
         <div class="modal-footer justify-content-center">
@@ -851,6 +1049,51 @@
         });
       });
     })();
+
+    // Project pop-ups: load images when opened and show an enlarged image viewer inside the pop-up
+    document.querySelectorAll('.project-modal').forEach(function (m) {
+      var isPublic = m.dataset.public === 'true';
+      m.querySelectorAll('[data-repo]').forEach(function (el) { el.hidden = !isPublic; });
+      m.querySelectorAll('[data-repo-private]').forEach(function (el) { el.hidden = isPublic; });
+
+      m.addEventListener('show.bs.modal', function () {
+        m.querySelectorAll('img[data-src]').forEach(function (img) { img.src = img.dataset.src; img.removeAttribute('data-src'); });
+      });
+
+      // image viewer
+      var shots = Array.prototype.slice.call(m.querySelectorAll('.proj-shot'));
+      var viewer = document.createElement('div');
+      viewer.className = 'proj-viewer';
+      viewer.hidden = true;
+      viewer.innerHTML = '<button type="button" class="pv-close" aria-label="Schließen"><i class="bi bi-x-lg"></i></button>' +
+        '<button type="button" class="pv-prev" aria-label="Zurück"><i class="bi bi-chevron-left"></i></button>' +
+        '<figure><img alt=""><figcaption></figcaption></figure>' +
+        '<button type="button" class="pv-next" aria-label="Weiter"><i class="bi bi-chevron-right"></i></button>';
+      m.appendChild(viewer);
+      var vImg = viewer.querySelector('img'), vCap = viewer.querySelector('figcaption'), cur = 0;
+      function show(i) {
+        cur = (i + shots.length) % shots.length;
+        var img = shots[cur].querySelector('img');
+        vImg.src = img.currentSrc || img.src || img.dataset.src;
+        vImg.alt = img.alt;
+        vCap.textContent = shots[cur].parentNode.querySelector('figcaption').textContent;
+        viewer.hidden = false;
+        viewer.querySelector('.pv-close').focus();
+      }
+      function close() { viewer.hidden = true; shots[cur].focus(); }
+      shots.forEach(function (b, i) { b.addEventListener('click', function () { show(i); }); });
+      viewer.querySelector('.pv-close').addEventListener('click', close);
+      viewer.querySelector('.pv-prev').addEventListener('click', function () { show(cur - 1); });
+      viewer.querySelector('.pv-next').addEventListener('click', function () { show(cur + 1); });
+      viewer.addEventListener('click', function (e) { if (e.target === viewer) close(); });
+      m.addEventListener('keydown', function (e) {
+        if (viewer.hidden) return;
+        if (e.key === 'Escape') { e.preventDefault(); e.stopImmediatePropagation(); close(); }
+        else if (e.key === 'ArrowLeft') show(cur - 1);
+        else if (e.key === 'ArrowRight') show(cur + 1);
+      }, true);
+      m.addEventListener('hidden.bs.modal', function () { viewer.hidden = true; m.querySelectorAll('video').forEach(function (v) { v.pause(); }); });
+    });
 
     // Language switch: keep the current section (#hash) when switching
     document.querySelectorAll('.lang-switch a').forEach(function (a) {
